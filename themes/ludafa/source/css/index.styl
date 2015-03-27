@@ -1,0 +1,46 @@
+@import "nib"
+
+@require "./common/base.styl"
+@require "./common/mixin.styl"
+@require "./common/nav.styl"
+@require "./common/markdown"
+@require "./common/highlight.styl"
+
+article
+    container(600px)
+    padding 72px 0
+
+    .create-date
+        line-height 30px
+        color rgba(0, 0, 0, .32)
+
+
+    h2
+        font-size: 27.6px;
+        line-height: 36px;
+        position: relative;
+        margin-top: 20.4px;
+        margin-bottom: 18px;
+        font-weight: 700;
+
+        a
+            text-decoration none
+            color: rgba(0,0,0,.75);
+            border-bottom: 1px solid transparent;
+            transition: color .3s, border-color .3s
+
+            &:hover
+                color: rgba(0,0,0,.98);
+                border-color: rgba(0,0,0,.4);
+
+    .post-content
+
+        a
+            color: #38b7ea;
+            text-decoration: none;
+
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s
+
+            &:hover
+                border-color: rgba(#38b7ea, .4);
